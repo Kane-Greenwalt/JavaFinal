@@ -4,8 +4,6 @@ import java.util.Scanner;
 
 public class ReggiesRoom {
 
-	private static Scanner input;
-
 	public static void Reroom()
 	{
 		//What do you call a programmer from Finland?
@@ -13,7 +11,7 @@ public class ReggiesRoom {
 		String doorChoice;
 		String moralChoice;
 		
-		input = new Scanner(System.in);
+		Scanner input = new Scanner(System.in);
 		
 		System.out.print("Once outside Reggie's office Chad notices that the lights are still on.");
 		System.out.print("\nReggie, or Regginald as he prefers, is Blue Ring's tech manager. Although well liked no one really listens to him.");

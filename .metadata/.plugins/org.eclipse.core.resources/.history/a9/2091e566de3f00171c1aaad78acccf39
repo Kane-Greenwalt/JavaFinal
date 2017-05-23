@@ -29,7 +29,7 @@ public class NicksRoom
                
         	 System.out.println("Chad is currently in your office and it's almost time to leave");
         	 System.out.println("Chad your key card doesn't work remember?"); 
-        	 System.out.println("You can make the adventure and go LEFT. Or STAY PUT");
+        	 System.out.println("just go to the RIGHT. Or you can make the adventure and go LEFT. Or STAY PUT");
         	 input = input1.nextLine();
         	 if(input.equals("STAY PUT"))//GameWithInAGame
         	 {

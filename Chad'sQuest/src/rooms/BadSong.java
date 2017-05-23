@@ -14,7 +14,7 @@ public class BadSong
 		public static void main(String[] args)
 		{
 			
-			File Clap = new File("C:\\Users\\bm122190\\Desktop\\JavaFinal\\JavaFinal\\Chad'sQuest\\src\\The G.Bear.wav");
+			File Clap = new File("C:\\Users\\kg137424\\Desktop\\JavaFinal\\Chad'sQuest\\src\\The G.Bear.wav");
 			PlaySound(Clap);
 		}
 		static void PlaySound(File Sound)

@@ -1,22 +1,21 @@
 package rooms;
 
 import java.io.File;
+
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
 
-public class AudioClips 
+public class BadSong 
 {
-
-	public static void playSound()
+	public static void playAnnoying()
 	{
 		
 	}
 		public static void main(String[] args)
 		{
 			
-			File Clap = new File("C:\\Users\\kg137424\\Desktop\\JavaFinal\\Chad'sQuest\\src\\FF Victory.wav");
+			File Clap = new File("C:\\Users\\kg137424\\Desktop\\JavaFinal\\JavaFinal\\Chad'sQuest\\src\\The G.Bear.wav");
 			PlaySound(Clap);
-			
 		}
 		static void PlaySound(File Sound)
 		{
@@ -34,4 +33,4 @@ public class AudioClips
 			}
 		
 		}
-	}
+}
