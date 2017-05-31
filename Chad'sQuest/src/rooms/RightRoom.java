@@ -15,8 +15,13 @@ public class RightRoom
 		System.out.println("Chad opens up the door and sees an unfinshed hallway.");
 		System.out.println("The walls are half painted and there is only one door on the left side of the hallway.");
 		System.out.println("A little further down the hall there is a door that leads to the outside.");
-		System.out.println("Does Chad go to the DOOR, or Walks down the hall.");
+		System.out.println("Does Chad go to the DOOR, or WALKS down the hall.");
 		input = input1.nextLine();
+		if(input.equalsIgnoreCase("WALKS"))
+		{
+			System.out.println("Chad walks down the hall.");
+			System.out.println("Finds a door, then walks out.");
+		}
 		if(input.equals("DOOR"))
 		{
 			System.out.println("Chad cracks open the door to get a peak inside.");

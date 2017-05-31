@@ -1,0 +1,36 @@
+package anotherTextGame;
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+public class Start 
+{
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+	    String answer;
+        String outputStr1;
+        String outputStr2;
+
+   answer =            
+        JOptionPane.showInputDialog ( "Do you have at least an eighth tank of gas? yes or no " );
+
+
+
+        outputStr1 = "You can drive straight to work";
+        outputStr2 = "Stop and get gas!";
+
+        if (answer == "yes")
+
+            JOptionPane.showMessageDialog(null, outputStr1, "Gas", JOptionPane.INFORMATION_MESSAGE);
+
+
+        else 
+            JOptionPane.showMessageDialog(null, outputStr2, "Gas", JOptionPane.INFORMATION_MESSAGE);
+
+
+       System.exit(0);            
+
+	}
+
+}

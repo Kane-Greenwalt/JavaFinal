@@ -16,22 +16,22 @@ public class NicksRoom
 		 String input;
          Scanner input1 = new Scanner(System.in);
          
-         System.out.println("Welcome to Chad's Quest! A text adventrue game where you type out what you want to do."); 
+         System.out.println("Welcome to Chad's Quest! A text adventure game where you type out what you want to do."); 
          System.out.println("To know what to enter into the console, the narator will emphasize the word you need to enter,"); 
-         System.out.println("example would be -ENTER, notice how enter is in all caps, this means it's an interative word.");
+         System.out.println("example would be -ENTER, notice how the word enter is in all caps, this means it's an interative word.");
          System.out.println("Would you like to play? YES or NO");
          input = input1.nextLine();
-         if(input.equals("YES"))
+         if(input.equalsIgnoreCase("YES"))
          {
            	  
         	 System.out.println("\nWhat is you name?");
-           	 System.out.println("Nice to meet you Chad");
-               
-        	 System.out.println("Chad is currently in your office and it's almost time to leave");
+        	 System.out.println("How about Chad?");
+           	 System.out.println("Nice to meet you Chad.");
+        	 System.out.println("Chad is currently in your office and it's almost time to leave.");
         	 System.out.println("Chad your key card doesn't work remember?"); 
         	 System.out.println("You can make the adventure and go LEFT. Or STAY PUT");
         	 input = input1.nextLine();
-        	 if(input.equals("STAY PUT"))//GameWithInAGame
+        	 if(input.equalsIgnoreCase("STAY PUT"))//GameWithInAGame
         	 {
         		 System.out.println("...");
         		 StayPut.StayPutGame();  	 
@@ -40,24 +40,26 @@ public class NicksRoom
         	 
         	 	
         	
-        	 if(input.equals("LEFT"))
+        	 if(input.equalsIgnoreCase("LEFT"))
         	 {
-        		 System.out.println("\nCommon Chad it's quicker just to go right, Just go RIGHT or keep going LEFT");
+        		 System.out.println("So you might be wondering who is talking. Well Im the narrator, simple as that. ");
+        		 System.out.println("\nBut Chad it's quicker just to go right, Just go RIGHT or keep going LEFT");
         		input = input1.nextLine();
-          		if(input.equals("RIGHT"))
+          		if(input.equalsIgnoreCase("RIGHT"))
         		{
         		 RightRoom.RightHall();
         		}
-        		if(input.equals("LEFT"))
+        		if(input.equalsIgnoreCase("LEFT"))
         		{
         			System.out.println("\nChad starts to go to the left hallway and notices that Doug's door is open.");
-        			System.out.println("Chad has always hated Doug as does everone else in the office does.");
+        			System.out.println("Chad has always hated Doug, as does everone else in the office.");
         			System.out.println("Doug is that one guy that always wants you to know how tough he is.");
         			System.out.println("Always trying to get you to go to the gym with the guy.");
         			System.out.println("Doug has left his office door unlocked. Due to the fact that Chad hates Doug, ");
         			System.out.println("it's time to mess with his stuff.");
-        			System.out.println("Doug is the office acountant, so he has paper crumbled up every where.");
+        			System.out.println("Doug is the office accountant, so he has paper crumbled up every where.");
         			System.out.println("But chad notices one peice of paper on top of the pile with the word Turky written on it.");
+        			System.out.println("Then there is a peice of paper on his desk with the number writen on it, 5466");
         			System.out.println("Chad goes to Doug's computer and turnes it on. The computer asks for a password");
         			System.out.println("Please enter the password");
         			System.out.println("***************************************************");
@@ -84,11 +86,11 @@ public class NicksRoom
         				System.out.println("\nThe computer welcomes you and boots up.");
         				System.out.println("After waiting for the computer to boot up, Chad is ready to mess with it.");
         				System.out.println("Chad goes to delete some files when he notices the file he is dragging.");
-        				System.out.println("The files reads: My Little Poney Season 2.");
-        				System.out.println("Chad is a little disturbed but knows that he has kids so ignores it.");
+        				System.out.println("The files reads: My Big Horse Season 2.");
+        				System.out.println("Chad is a little disturbed but knows that Doug has kids so ignores it.");
         				System.out.println("But then the file opens up, Chad sees disturbing things. There are pictures along with videos of");
-        				System.out.println("Doug in a My Little Poney shirt, and Doug watching My little Poney without his daughter");
-        				System.out.println("Chad is grossed out. Then the computer gets an email, that just states: Yea if you're going to pay me I can do that");
+        				System.out.println("Doug in a My Big Horse shirt, and Doug watching My little Poney without his daughter");
+        				System.out.println("Chad is grossed out. Then the computer gets an email, from Eric that just states: Yea if you're going to pay me I can do that");
         				System.out.println("Chad then closes out the computer and goes out Dougs door.");
         				System.out.println("Game Over ending 2");	
         			}
@@ -113,7 +115,7 @@ public class NicksRoom
         				System.out.println("Man Eric is so weird");
         				System.out.println("Chad thinks Do I TELL, or IGNORE it?");
         				input = input1.nextLine();
-        				if(input.equals("TELL"))//EricOfficeTellChoice
+        				if(input.equalsIgnoreCase("TELL"))//EricOfficeTellChoice
         				{
         					System.out.println("\nChad decides to tell Eric. Eric is the guy at the office that nobody likes being around him. ");
         					System.out.println("Eric tries to make everbody like him, and he tries too hard.");
@@ -143,7 +145,7 @@ public class NicksRoom
         					System.out.println("Chad come back. You really believe this guy?");
         					System.out.println("Game Over Ending 3");
         				}
-        				if(input.equals("IGNORE"))//EricOfficeIgnoreChoice
+        				if(input.equalsIgnoreCase("IGNORE"))//EricOfficeIgnoreChoice
         				{
         					System.out.println("\nChad chooses to ignore what he just saw, and just takes a minute to himself outside Eric's office.");
         					System.out.println("Eric then walkes out his office, and nods at Chad, then he goes to lunch. ");
@@ -156,7 +158,7 @@ public class NicksRoom
         					input = input1.nextLine();
         			
      
-        					if(input.equals("BOTTOM"))//FindWhip
+        					if(input.equalsIgnoreCase("BOTTOM"))//FindWhip
         					{
         						System.out.println("\nChad opens up the bottom drawer and finds a latex mask, and a whip.");
         						System.out.println("The mask seems to have a little bit of sweat on it, like it has been used recently.");
@@ -164,7 +166,7 @@ public class NicksRoom
         						System.out.println("The next room is Sarah's room");
         						SarahsRoom.SaRoom();
         					}
-        					if(input.equals("TOP"))//ChadGetsCaughtSnooping
+        					if(input.equalsIgnoreCase("TOP"))//ChadGetsCaughtSnooping
         					{ 
         						System.out.println("\nThere's nothing in here but dust.");
         						System.out.println("Did you really just open that for nothing?");
@@ -177,11 +179,11 @@ public class NicksRoom
         			}
         		}
         	 } 
-             if(input.equals("Turn Around"))//NicksOffice
+             if(input.equalsIgnoreCase("Turn Around"))//NicksOffice
         	 {
         		 System.out.println("\nPlease enter password");
         		 input = input1.nextLine();
-        		 if(input.equals("BadNick"))//PasswordForNicksOffice
+        		 if(input.equalsIgnoreCase("BadNick"))//PasswordForNicksOffice
                         
         		 {
         			 System.out.println("Chad turns around and goes towards the mail room where Nick works. Nick");
@@ -211,7 +213,7 @@ public class NicksRoom
         		        		 System.out.println("HAHAHAHAHAHAHAHAHA.");
         		        		 System.out.println("Ok it's time to LEAVE.");
         		        		 input = input1.nextLine();
-        		        		 if(input.equals("LEAVE"))
+        		        		 if(input.equalsIgnoreCase("LEAVE"))
         		        		 {
         		        			 System.out.println("\nGame Over secret ending");
         		        		 }

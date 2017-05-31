@@ -1,0 +1,24 @@
+package anotherTextGame;
+import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+public class Start 
+{
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		String answer;
+		
+		
+		answer =
+ 		JOptionPane.showInputDialog(null,"Welcome child.");
+		
+		
+		if(answer.equals("yes"))
+		{
+			JOptionPane.showInputDialog(null, "hi");
+		}
+	}
+
+}

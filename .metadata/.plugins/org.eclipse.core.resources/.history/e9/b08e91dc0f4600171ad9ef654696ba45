@@ -1,0 +1,42 @@
+package anotherTextGame;
+
+
+import javax.swing.JOptionPane;
+public class Start 
+{
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		String answer;
+		
+		
+		answer =
+ 		JOptionPane.showInputDialog(null,"Welcome to Bartforts Casino. Would you like to enter? YES or NO.");
+		
+		
+		if(answer.equalsIgnoreCase("yes"))
+		{
+			JOptionPane.showInputDialog(null, "Are you a Mr or Ms?");
+			if(answer.equalsIgnoreCase("Mr"))
+			{
+				JOptionPane.showInputDialog(null, "Welcome Sir, Would you like to make a bond with us tonight? (Adds $50 to your funds) YES or NO.");
+				if(answer.equalsIgnoreCase("Yes"))
+				{
+					JOptionPane.showInputDialog(null, "Ok if you will follow me Mr, we will get that set up for you.");
+				}
+			else if(answer.equalsIgnoreCase("Ms"))
+			{
+				JOptionPane.showInputDialog(null, "Welcome Ms, Would you like to make a bond with us tonight? (Adds $50 to your funds) YES or NO.");
+				if(answer.equalsIgnoreCase("Yes"))
+				{
+					JOptionPane.showInputDialog(null, "Ok if you will follow me Ms, we will get that set up for you.");
+				}
+			}
+			
+			
+			}
+		}
+	}
+
+}
